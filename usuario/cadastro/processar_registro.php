@@ -33,5 +33,7 @@
         // Fechar conexões
         $stmt->close();
         $conn->close();
+
+        header("location: ./../login/login.php");
     }
 ?>

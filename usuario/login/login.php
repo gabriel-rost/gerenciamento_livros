@@ -89,6 +89,7 @@
             ?>
            
         </form>
+        <a href="./../cadastro/registrar.html" class="forgot">Fazer cadastro</a>
         <a href="recuperar_senha.php" class="forgot">Esqueceu a senha?</a>
     </div>
 </body>

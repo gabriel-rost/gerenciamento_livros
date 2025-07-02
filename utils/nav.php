@@ -1,10 +1,11 @@
 <?php
+    //<a href="./../usuario/login/login.php">Login</a>
+
 
     echo '
     <nav class="nav">
         <a href="./../livro/mostrar_livros.php">Home</a>
         <a href="./../livro/cadastrar_livro.php">Cadastrar Livro</a>
-        <a href="./../usuario/login/login.php">Login</a>
         <a href="./../utils/session_destroy.php">Sair</a>
     </nav>
 
