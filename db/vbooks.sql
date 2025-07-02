@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 01/07/2025 às 23:34
+-- Tempo de geração: 02/07/2025 às 04:25
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.0.30
 
@@ -64,7 +64,13 @@ CREATE TABLE `livros` (
 --
 
 INSERT INTO `livros` (`id`, `titulo`, `autor`, `genero_id`, `editora`, `ano_publicacao`, `classificacao`) VALUES
-(8, 'O Código Da Vinci', 'Dan Brown', 5, ' Arqueiro ', 2003, 'Todas as idades');
+(8, 'O Código Da Vinci', 'Dan Brown', 5, ' Arqueiro ', 2003, 'Todas as idades'),
+(9, '1984', 'George Orwell', 4, 'Companhia das Letras', 1949, 'Adulto'),
+(10, 'Cem Anos de Solidão', 'Gabriel García Márquez', 4, 'Record', 1967, 'Adulto'),
+(11, 'A Menina que Roubava Livros', 'Markus Zusak', 3, 'Intrínseca', 2005, 'Todas as idades'),
+(12, 'O Senhor dos Anéis: A Sociedade do Anel', 'J.R.R. Tolkien', 4, '  HarperCollins  ', 1954, 'Todas as idades'),
+(13, 'Dom Quixote', 'Miguel de Cervantes', 5, 'Penguin Companhia', 1605, 'Todas as idades'),
+(14, 'teste teste', 'Qualquer autor', 5, 'Editora Qualquer', 2025, 'Todas as idades');
 
 -- --------------------------------------------------------
 
@@ -124,13 +130,13 @@ ALTER TABLE `generos`
 -- AUTO_INCREMENT de tabela `livros`
 --
 ALTER TABLE `livros`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT de tabela `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- Restrições para tabelas despejadas
