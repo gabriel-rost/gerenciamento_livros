@@ -41,10 +41,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/cadastrar_livros.css">
+    <link rel="stylesheet" href="./styles/formulario.css">
     <title>Cadastrar Livro</title>
 </head>
 <body>
+    <div class='container'>
     <form action="" method="post">
         <label for="titulo">
             Título:
@@ -108,5 +109,6 @@
         </div>
         <button type="submit">Cadastrar</button>
     </form>
+    </div>
 </body>
 </html>

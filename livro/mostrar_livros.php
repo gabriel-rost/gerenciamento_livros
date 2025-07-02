@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles/mostrar_livros.css">
+    <link rel="stylesheet" href="./styles/cards.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exibir Livros</title>
 </head>
@@ -60,7 +60,7 @@
                 echo '<div class="editora">' . htmlspecialchars($row['editora']) . "</div>";
                 echo '<div class="ano">' . htmlspecialchars($row['ano_publicacao']) . "</div>";
                 echo '<div class="classificacao">' . htmlspecialchars($row['classificacao']) . "</div>";
-                echo ("<a class='btn btn-edit' href='./editar_livro/editar.php?id=" . urlencode($row['id'])) . "'>Editar</a>";
+                echo ("<a class='btn btn-edit' href='./editar.php?id=" . urlencode($row['id'])) . "'>Editar</a>";
                 echo ("<a class='btn btn-delete' href='excluir.php?id=" . urlencode($row['id'])) . "'>Excluir</a>";
                 echo "</div>";
             }
@@ -73,56 +73,5 @@
     ?>
 
     </div>
-
-
-
 </body>
 </html>
-
-<style>
-.card_book {
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 12px;
-    margin: 10px 0;
-    width: 300px;
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
-}
-
-.card_book > div {
-    margin-bottom: 6px;
-}
-
-.card_book .titulo {
-    font-size: 18px;
-    font-weight: bold;
-    color: #333;
-}
-
-.card_book .autor {
-    font-style: italic;
-    color: #555;
-}
-
-.card_book .genero,
-.card_book .editora,
-.card_book .ano,
-.card_book .classificacao {
-    font-size: 14px;
-    color: #444;
-}
-
-.books {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: flex-start;
-    justify-content: space-around;
-}
-
-
-
-</style>

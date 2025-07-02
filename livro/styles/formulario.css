@@ -1,0 +1,137 @@
+.cancelar-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e74c3c;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 15px;
+}
+
+.cancelar-btn:hover {
+    background-color: #c0392b;
+    transform: translateY(-2px);
+}
+
+.cancelar-btn:active {
+    transform: translateY(0);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
+    margin-top: 80px;
+}
+
+form h2 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.8em;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #34495e;
+    font-weight: bold;
+    font-size: 1em;
+    margin-top: 20px;
+}
+
+form label:first-of-type {
+    margin-top: 0;
+}
+
+form input[type="text"],
+form input[type="number"],
+form select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1em;
+    color: #333;
+    background-color: #f9f9f9;
+    margin-bottom: 15px;
+}
+
+form input[type="text"]:focus,
+form input[type="number"]:focus,
+form select:focus {
+    border-color: #2c3e50;
+    outline: none;
+    box-shadow: 0 0 5px rgba(44, 62, 80, 0.3);
+}
+
+.classificacao-group {
+    margin-top: 25px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #fdfdfd;
+    margin-bottom: 20px;
+}
+
+.classificacao-group label {
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    font-weight: normal;
+    margin-top: 0;
+}
+
+.classificacao-group p {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #555;
+    font-size: 0.9em;
+}
+
+.classificacao-group div {
+    margin-bottom: 8px;
+}
+
+form input[type="radio"] {
+    margin-right: 5px;
+    transform: scale(1.1);
+    margin-bottom: 0;
+}
+
+form button[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background-color: #2c3e50;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 25px;
+}
+
+form button[type="submit"]:hover {
+    background-color: #34495e;
+    transform: translateY(-2px);
+}

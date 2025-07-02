@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editando usuário</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/formulario.css">
 </head>
 <body>
-    <div class="container">
         <?php
+
+            require_once("./../utils/nav.php");
+
+            echo "<div class='container'>";
 
             $id_livro = isset($_GET["id"]) ? (int) $_GET["id"] : 0; // pegando o parametro de usuário que vem da url e faz a conversão para int
 
@@ -51,7 +54,7 @@
 
             } else {
                 // não encontrou nenhum registro
-                header("location: ../mostrar_livros.php");
+                header("location: ./mostrar_livros.php");
             }
             
             $stmt->close(); // encerra a consulta
@@ -59,6 +62,7 @@
         ?>
 
         <!-- criando um campo oculto de formulário para controlar se a operação é de edição -->
+        
         <form action="" method="post">
         <label for="titulo">
             Título:
@@ -125,7 +129,7 @@
         <button type="submit">Cadastrar</button>
         </form>
 
-        <a href="./../mostrar_livros.php">Cancelar</a>
+        <a class="cancelar-btn" href="./mostrar_livros.php">Cancelar</a>
 
 
     </div>
@@ -134,7 +138,7 @@
 
 
 <?php
-    require_once("./../../db/db_config.php");
+    require_once("./../db/db_config.php");
     //require_once("./../../utils/protege.php");
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         // Conectar ao banco de dados
